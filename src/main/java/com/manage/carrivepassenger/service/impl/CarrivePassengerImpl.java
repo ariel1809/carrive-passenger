@@ -1,10 +1,8 @@
 package com.manage.carrivepassenger.service.impl;
 
-import com.manage.carrive.entity.Driver;
 import com.manage.carrive.entity.Itinerary;
 import com.manage.carrive.entity.Passenger;
 import com.manage.carrive.enumeration.CodeResponseEnum;
-import com.manage.carrive.response.DriverResponse;
 import com.manage.carrive.response.PassengerResponse;
 import com.manage.carrivepassenger.security.JwtRequestFilter;
 import com.manage.carrivepassenger.service.api.CarrivePassengerApi;

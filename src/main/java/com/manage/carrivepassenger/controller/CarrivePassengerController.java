@@ -40,7 +40,7 @@ public class CarrivePassengerController {
     }
 
     @PostMapping("logout")
-    private ResponseEntity<PassengerResponse> logout() {
+    public ResponseEntity<PassengerResponse> logout() {
         return service.logout();
     }
 }
