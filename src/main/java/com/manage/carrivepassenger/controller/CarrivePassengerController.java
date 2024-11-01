@@ -24,12 +24,12 @@ public class CarrivePassengerController {
         return messageFeignClient.initConversation(idReceiver);
     }
 
-    @PostMapping("/list-conversations")
+    @PostMapping("list-conversations")
     public ResponseEntity<MessageResponse> listConversations() {
         return messageFeignClient.listConversationsByUser();
     }
 
-    @PostMapping("/send-message")
+    @PostMapping("send-message")
     ResponseEntity<MessageResponse> sendMessage(@RequestParam("id_conversation") String idConversation, @RequestBody MessageDto message){
         return messageFeignClient.sendMessage(idConversation, message);
     }
