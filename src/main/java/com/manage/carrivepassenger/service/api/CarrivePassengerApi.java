@@ -7,4 +7,5 @@ import org.springframework.stereotype.Service;
 @Service
 public interface CarrivePassengerApi {
     ResponseEntity<PassengerResponse> listAllRides();
+    ResponseEntity<PassengerResponse> logout();
 }

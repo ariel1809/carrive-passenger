@@ -38,4 +38,9 @@ public class CarrivePassengerController {
     public ResponseEntity<PassengerResponse> listAllRides() {
         return service.listAllRides();
     }
+
+    @PostMapping("logout")
+    private ResponseEntity<PassengerResponse> logout() {
+        return service.logout();
+    }
 }
